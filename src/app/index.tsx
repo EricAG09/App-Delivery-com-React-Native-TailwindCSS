@@ -4,7 +4,7 @@ import Constants from 'expo-constants';
 import { Banner } from "../components/banner";
 import { Search } from "../components/search";
 import { Section } from "../components/section";
-import { Trending } from "../components/trending";
+import { TrendingFoods } from "../components/trending";
 
 
 const statusBarHeight = Constants.statusBarHeight; /** Estou criando isso para deixar o icone de menu adaptavel nas telas sem precisar ficar colocando margin */
@@ -23,8 +23,8 @@ export default function Index() {
         action={ () => console.log("Clicou em ver mais") }
         size="text-2xl"
       />
+      <TrendingFoods />
       
-      <Trending />
     </ScrollView>
   );
 }
